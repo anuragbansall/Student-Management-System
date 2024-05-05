@@ -1,0 +1,230 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+a#back-to-home{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.4vw;
+}
+
+main{
+    position: relative;
+    background-color: #111;
+    padding: 2vw;
+    height: 100vh;
+    width: 100%;
+    color: #fff;
+}
+
+main > h1,main > h2{
+    text-align: center;
+    font-size: 2.5vw;
+    color: #fff;
+}
+
+#home-page .nav-items{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5vw;
+    font-weight: 600;
+    gap: 1vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#home-page .nav-items a{
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+    border: 1px solid #fff;
+    text-decoration: none;
+    padding: 1vw 5vw;
+    transition: all 1s;
+}
+
+#home-page .nav-items a::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0%;
+    height: 100%;
+    z-index: -1;
+    width: 100%;
+    background-color: #fff; 
+    transition: all 1s;
+    transform: translateY(100%);
+    transition: all 0.3s ease-in-out;
+}
+
+#home-page .nav-items a:hover{
+    color: #000;
+}
+
+#home-page .nav-items a:hover::before{
+    transform: translateY(0);
+}
+
+#add-student form{
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* background-color: red; */
+}
+
+#add-student form .row{
+    display: flex;
+    justify-content: space-between;
+    gap: 1vw;
+    /* background-color: pink; */
+}
+
+#add-student form .row label{
+    color: #fff;
+    font-size: 1.5vw;
+}
+
+#add-student form .row input{
+    border: none;
+    padding: 0.5vw 1vw;
+    outline: none;
+}
+
+#add-student form button{
+    position: relative;
+    align-self: center;
+    overflow: hidden;
+    border: none;
+    font-size: 1.2vw;
+    margin-top: 1vw;
+    font-weight: 700;
+    padding: 0.8vw 2vw;
+    width: fit-content;
+    cursor: pointer;
+    background: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+#add-student form button::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0%;
+    height: 100%;
+    z-index: -1;
+    width: 100%;
+    background-color: #fff; 
+    transition: all 1s;
+    transform: translateY(100%);
+    transition: all 0.3s ease-in-out;
+}
+
+#add-student form button:hover{
+    color: #000;
+}
+
+#add-student form button:hover::before{
+    transform: translateY(0);
+}
+
+#view-student table{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 7vw;
+}
+
+#view-student table tr{
+    background-color: transparent;
+}
+
+#view-student table tr th{
+    font-size: 1.5vw;
+    padding: 1vw;
+    border: 1px solid #fff;
+}
+
+#view-student table tr td{
+    text-align: center;
+    font-size: 1.5vw;
+    padding: 1vw;
+    border: 1px solid #fff;
+}
+
+#view-student table tr td a.delete-record{
+    font-size: 2vw;
+    color: #fff;
+    text-decoration: none;
+}
+
+#view-student #search-student{
+    height: 4vw;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 2vw 0;
+    /* background-color: pink; */
+}
+
+#view-student #search-student input{
+    background: none;
+    border: 1px solid gray;
+    outline: none;
+    color: #fff;
+    padding: 0.5vw 1vw;
+    font-size: 1.5vw;
+    width: 40vw;
+    height: 100%;
+}
+
+#view-student #search-student button{
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    font-size: 1.2vw;
+    /* margin-top: 1vw; */
+    font-weight: 700;
+    padding: 0.8vw 2vw;
+    width: fit-content;
+    cursor: pointer;
+    background: transparent;
+    color: #fff;
+    border: 1px solid gray;
+}
+
+#view-student #search-student button::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0%;
+    height: 100%;
+    z-index: -1;
+    width: 100%;
+    background-color: #fff; 
+    transition: all 1s;
+    transform: translateY(100%);
+    transition: all 0.3s ease-in-out;
+}
+
+#view-student #search-student button:hover{
+    color: #000;
+}
+
+#view-student #search-student button:hover::before{
+    transform: translateY(0);
+}
